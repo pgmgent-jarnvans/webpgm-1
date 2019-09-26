@@ -43,3 +43,34 @@ else if (deviceWidth >= 480 && deviceWidth < 768) {
 else {
   console.log('Hey hipster you are up to date :)')
 }
+
+/*
+switch ... case statement
+*/
+/*
+N: Noorden
+E: Oosten
+S: Zuiden
+W: Westen
+*/
+
+let windDirection = 'W', msg="normal";
+switch(windDirection) {
+  case 'N':
+    msg = 'chill';
+    break;
+  case 'E':
+    msg = 'nuclear'
+    break;
+  case 'S':
+    msg = 'dusty'
+    break;
+  case 'W':
+    msg = 'wet'
+    break;
+  default:
+    msg = 'normal';
+    break;
+}
+
+console.log(msg);
