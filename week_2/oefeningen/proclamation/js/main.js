@@ -1,7 +1,7 @@
 let score = parseInt(prompt('Geef een percentage in.'));
 
 if(score > 50 && score < 68) {
-  console.log('%c \u{1F3C6} Voldoende', 'color:red');
+  console.log('%c \u{1F3C6} Op voldoende wijze', 'color:red');
 }
 else if(score >= 68 && score < 77) {
   console.log('%c \u{1F3C6} Onderscheiding', 'color: orange');
