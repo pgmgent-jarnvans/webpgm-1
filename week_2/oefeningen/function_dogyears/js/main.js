@@ -1,8 +1,8 @@
-temperature = parseInt(prompt('Geef een temperatuur (°F)'));
+temperature = parseInt(prompt('Geef een de leeftijd van je hond in'));
 
-function convertFahrenheitToCelcius(temp) {
-  let celcius = temp * 5 / 9;
-  return `Temperature of ${temp}°F equals to ${celcius.toFixed(1)}°C!`;
+function convertFahrenheitToCelcius(age) {
+  let ageDog = age * 7;
+  return `Your dog is ${ageDog} years old in dogyears!`;
 }
 
 console.log(convertFahrenheitToCelcius(temperature));
