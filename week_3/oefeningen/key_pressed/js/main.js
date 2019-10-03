@@ -1,32 +1,25 @@
-let pressed = false;
-let x = 0;
-let y = 0;
-let w = 75;
-let h = 150;
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  background(255);
   noStroke();
-  rectMode(CENTER, CENTER);
-  x = width / 2;
-  y = height / 2;
+  rectMode(CENTER);
+  textAlign(CENTER, CENTER);
 }
 
 function draw() {
-  if (pressed) {
-    background(255);
-    fill(0);
-    rect(x, y, w, h); 
-  }
-  else {
-    background(0);
-    fill(255);
-    rect(width / 2, height / 2, 75, 150); 
-  }
+  
 }
 
-function mousePressed() {
-  if((mouseX < x + (w / 2) && mouseY < y + (h / 2)) && (mouseX > x - (w / 2) && mouseY > y - (h / 2))) {
-    pressed = !pressed;
+function keyTyped() {
+  let letter = String.fromCharCode(keyCode);
+  let x = random(width);
+  let y = random(height);
+  let size = random(15, 100);
+  if (keyCode > 46 && keyCode < 111){
+    fill(0);
+    rect(x, y, size, size);
+    fill(random(255), random(255), random(255));
+    textSize(size);
+    text(letter.toLowerCase(), x, y);
   }
 }

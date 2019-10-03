@@ -16,12 +16,13 @@ function draw() {
   if (pressed) {
     background(255);
     fill(0);
+    rect(x, y, w, h); 
   }
   else {
     background(0);
     fill(255);
+    rect(width / 2, height / 2, 75, 150); 
   }
-  rect(x, y, w, h);
 }
 
 function mousePressed() {
