@@ -1,11 +1,10 @@
 let cols = 10;
 let rows = 10;
 
-const diameter = 50;
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
   frameRate(10);
+  strokeWeight(5);
   stroke(255);
 }
 
