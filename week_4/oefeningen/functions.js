@@ -37,6 +37,53 @@ function checkWhichCountryNameIsLongest(countries) {
 const countriesArray = ['Belgium', 'Germany', 'France', 'Russia', 'Spain', 'Portugal', 'Zimbabwe', 'United Kingdom', 'United States Of America', ''];
 console.log(`The longest country name in the array is ${checkWhichCountryNameIsLongest(countriesArray)}`);
 
+function generateGUID(numberOfCharacters) {
+  const possibleCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let guid = '';
+
+  for(let i = 0; i < numberOfCharacters; i++) {
+    guid += possibleCharacters.charAt(Math.round(Math.random() * possibleCharacters.length));
+  }
+
+  return guid;
+}
+
+console.log(`Unique GUID: ${generateGUID(50)}`);
+console.log(`Unique GUID: ${generateGUID(20)}`);
+
+function extractCharactersFromString(word, amountOfCharactersToExtract) {
+  return word.substring(0, amountOfCharactersToExtract);
+}
+
+console.log(`First 5 characters extracted from "Computerscherm" are ${extractCharactersFromString('Computerscherm', 5)}`);
+console.log(`First 10 characters extracted from "Hottentottententententoonstelling" are ${extractCharactersFromString('Hottentottententententoonstelling', 10)}`);
+
+function repeatWord(word, repeatCount) {
+  let result = '';
+  for(let i = 0; i < repeatCount; i++) {
+    result += word + ' ';
+  }
+
+  return result;
+}
+
+console.log(repeatWord('kippen', 5));
+
+function getCurrentDate(seperator) {
+  const currentDate = new Date();
+  return `${currentDate.getDate()}${seperator}${currentDate.getMonth() + 1}${seperator}${currentDate.getFullYear()}`;
+}
+
+console.log(getCurrentDate('-'));
+console.log(getCurrentDate('/'));
+
+function getVowelsFromSentence(sentence) {
+  const vowels = sentence.match(/[aeiou]/gi);
+  return vowels.length;
+}
+
+console.log(`The amount of vowels in this sentence is ${getVowelsFromSentence('The amount of vowels in this sentence is')}`);
+
 
 
 
