@@ -1,0 +1,26 @@
+:root {
+  --color-black: rgba(0, 0, 0, 1);
+
+}
+
+#shades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+#shades > .box {
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  box-sizing: border-box;
+  /* border: 1px solid var(--color-black); */
+
+  transition: all 268ms ease-in-out 0s;
+}
+
+#shades > .box:hover {
+  transform: scale(1.5) rotate(360);
+}

@@ -1,0 +1,20 @@
+:root {
+  --color-border: #000;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.current-color {
+  border: 2px solid var(--color-border);
+  width: 200px;
+  height: 200px;
+}
+
+.history-colors {
+  border: 2px solid var(--color-border);
+  width: 200px;
+  height: 50px;
+}

@@ -47,6 +47,8 @@ let amountOfCards = 0;
  * @param {Object} picture 
  */
 
+
+
 function BusinessCard(firstName, lastName, job, phone, mobile, email, website, gender, birthday, address, picture) {
   this.firstName = firstName;
   this.lastName = lastName;

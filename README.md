@@ -21,3 +21,7 @@
 ### Week 5
 - [x] in progress
 - [ ] completed
+
+### Week 6
+- [x] in progress
+- [ ] completed

@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 10000px;
+
+  background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.btn-totop {
+  position: fixed;
+  z-index: 999;  
+  right: 16px;
+  bottom: 16px;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+
+  text-indent: -999em;
+}
+
+.btn-todown {
+  position: fixed;
+  z-index: 999;
+  left: 16px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+
+  text-indent: -999em;
+}

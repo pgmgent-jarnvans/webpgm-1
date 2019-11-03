@@ -1,0 +1,57 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 48px;
+  width: 48px;
+
+  border: 2px solid rgba(0, 0, 0, 1);
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 48px;
+}
+
+.box-selected {
+  background: rgba(255, 0, 0, 1);
+  width: 160px;
+  height: 160px;
+  margin: 50px auto 0;
+}
+
+.box-selected > span {
+  display: block;
+  font-size: 82px;
+  line-height: 160px;
+  text-align: center;
+  width: 160px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.box-detail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  transition: all 268ms ease-in-out 0s;
+}
+
+.box-detail.open {
+  transform: translate(0);
+}
+
+.box-detail.close {
+  transform: translate(-100vw);
+}
