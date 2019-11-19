@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i|Muli:400,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html, body {
+  background: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Muli', sans-serif;
+}
+
+.team {
+  max-width: 480px;
+  margin: 32px auto;
+}
+
+.team-member {
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  padding: 16px;
+  
+  background: rgba(240, 240, 240, 1);
+  border: 2px solid rgba(222, 222, 222, 1);
+  border-radius: 12px;
+}
+
+.team-member > .team-member__name {
+  margin-left: 32px;
+}
+
+.team-member > .team-member__email {
+  margin-left: 32px;
+}
+
+.team-member > .team-member__picture {
+  position: absolute;
+  left: -32px;
+  top: 8px;
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+
+.team-member > .team-member__picture > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  border: 2px solid rgba(222, 222, 222, 1);
+  border-radius: 50%;
+}
+
+.team-member > .team-member__gender {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  text-align: 32px;
+  
+  border: 2px solid rgba(222, 222, 222, 1);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  padding: 8px;
+}
